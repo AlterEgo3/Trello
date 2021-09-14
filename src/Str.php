@@ -12,9 +12,14 @@ class Str
      * @param string $search
      * @return string
      */
-//    public static function after(string $subject, string $search): string
-//    {
-//    }
+    public static function after(string $subject, string $search): string
+    {
+        $str = mb_strpos($subject, $search);
+        if ($str === false) {
+            return $subject;
+        }
+        return mb_substr($subject, $str + mb_strlen($search));
+    }
 
     /**
      * Returns everything after the last occurrence of the given value in a string.

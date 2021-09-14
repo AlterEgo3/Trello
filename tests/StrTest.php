@@ -7,18 +7,18 @@ use PHPUnit\Framework\TestCase;
 
 class StrTest extends TestCase
 {
-//    public function testAfter()
-//    {
-//        $this->assertEquals(
-//            'This is my name',
-//            Str::after('This is my name', 'something')
-//        );
-//
-//        $this->assertEquals(
-//            ' my name',
-//            Str::after('This is my name', 'This is')
-//        );
-//    }
+    public function testAfter()
+    {
+        $this->assertEquals(
+            'This is my name',
+            Str::after('This is my name', 'something')
+        );
+
+        $this->assertEquals(
+            ' my name',
+            Str::after('This is my name', 'This is')
+        );
+    }
 
 //    public function testAfterLast()
 //    {
